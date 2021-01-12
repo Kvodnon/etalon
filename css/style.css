@@ -4,6 +4,15 @@ body {
 .bg {
     padding: 55px 0;
 }
+.site-title {
+    font-size: 36px;
+}
+.text--orange {
+    color: #e53411;
+}
+.text--blue {
+    color: #1b75bb;
+}
 .header__container {
     position: relative;
     display: flex;
@@ -150,4 +159,16 @@ body {
 .stat-desc {
     font-size: 14px;
     max-width: 168px;
+}
+.main-slider-card {
+    box-shadow: 0px 1px 114px 0px rgba(0, 0, 0, 0.15);
+}
+.main-slider-title {
+    font-size: 24px;
+    max-width: 177px;
+    display: block;
+}
+.main-slider-desc {
+    font-size: 14px;
+    max-width: 259px;
 }
