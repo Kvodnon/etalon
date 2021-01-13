@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
-    <link rel="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -93,17 +94,28 @@
 
     <div class="bg why">
         <div class="container">
-            <div class="main-slider">
-                <div class="main-slider-card">
-                    <span class="main-slider-title">Скидка на окна 
-                        в августе <span class="text--orange">5%</span></span>
-                    <p class="main-slider-desc main-slider__desc">Оставьте заявку на бесплатный замер, и мы предложим вам несколько вариантов </p>
+            <!-- Slider main container -->
+            <div class="main-slider swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="main-slider-card">
+                            <span class="main-slider-title">Скидка на окна 
+                                в августе <span class="text--orange">5%</span></span>
+                            <p class="main-slider-desc main-slider__desc">Оставьте заявку на бесплатный замер, и мы предложим вам несколько вариантов </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="main-slider-card">
+                            <span class="main-slider-title">Скидка на окна 
+                                в августе <span class="text--orange">5%</span></span>
+                            <p class="main-slider-desc main-slider__desc">Оставьте заявку на бесплатный замер, и мы предложим вам несколько вариантов </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="main-slider-card">
-                    <span class="main-slider-title">Скидка на окна 
-                        в августе <span class="text--orange">5%</span></span>
-                    <p class="main-slider-desc main-slider__desc">Оставьте заявку на бесплатный замер, и мы предложим вам несколько вариантов </p>
-                </div>
+                
+                <span class="main-slider-arrow main-slider-prev swiper-button-prev"></span>
+                <span class="main-slider-arrow main-slider-next swiper-button-next"></span>
             </div>
 
             <h2 class="site-title">Почему выбирают «<span class="text--blue">Эталон Окна</span>»</h2>
@@ -168,34 +180,61 @@
     </div>
 
     <div class="bg bg--gray">
-        <span class="bg-num">01</span>
-
+        
         <div class="container">
-            <div class="d-flex align-items-center justify-content-between factory__title">
-                <h2 class="site-title">Собственное производство в Санкт-Петербурге</h2>
-                <a href="#" class="factory-link">Вся продукция</a>
-            </div>
+            <span class="bg-num factory__num">01</span>
 
-            <div class="row">
-                <div class="col-3">
-                    <h3 class="factory-content-title factory-content__title">Широкий ассортимент</h3>
-
-                    <span class="factory-undertitle"><span class="text--blue">100 000</span> окон и 47 000 дверей мы произвели в СПб в прошлом году</span>
-                    <p class="factory-desc factory__desc">Доверяйте изготовление монтаж пластиковых окон только профессионалам надежных компаний, хорошо себя зарекомендовавших на рынке пластиковых окон и дверей годами.</p>
-                    
-                    <span class="factory-undertitle">Применяем надежные немецкие уплотнители и фурнитуру</span>
-                    <p class="factory-desc factory__desc">Применение надежных немецких уплотнителей и фурнитуры в комплексе с правильной регулировкой пластиковых окон – гарантия вашего спокойствия на десятилетия.</p>
+            <div class="relative">
+                <div class="d-flex align-items-center justify-content-between factories__title">
+                    <h2 class="site-title">Собственное производство в Санкт-Петербурге</h2>
+                    <a href="#" class="factory-link">Вся продукция</a>
                 </div>
-                <div class="col">
-                    <div class="row">
-                        <a href="#" class="factory-item">Пластиковые окна</a>
-                        <a href="#" class="factory-item">Двери порталы</a>
-                        <a href="#" class="factory-item">Готовые окна для дачи</a>
-                        <a href="#" class="factory-item">Оконные профили</a>
-                        <a href="#" class="factory-item">Аксессуары для окон</a>
-                        <a href="#" class="factory-item">Алюминиевые конструкции</a>
-                        <a href="#" class="factory-item">Двери ПВХ</a>
-                        <a href="#" class="factory-item">Офисные перегородки</a>
+    
+                <div class="row">
+                    <div class="col-3">
+                        <h3 class="factory-content-title factory-content__title">Широкий ассортимент</h3>
+    
+                        <span class="factory-undertitle"><span class="text--blue">100 000</span> окон и 47 000 дверей мы произвели в СПб в прошлом году</span>
+                        <p class="factory-desc factory__desc">Доверяйте изготовление монтаж пластиковых окон только профессионалам надежных компаний, хорошо себя зарекомендовавших на рынке пластиковых окон и дверей годами.</p>
+                        
+                        <span class="factory-undertitle">Применяем надежные немецкие уплотнители и фурнитуру</span>
+                        <p class="factory-desc factory__desc">Применение надежных немецких уплотнителей и фурнитуры в комплексе с правильной регулировкой пластиковых окон – гарантия вашего спокойствия на десятилетия.</p>
+                    </div>
+                    <div class="col">
+                        <div class="factory-gallery">
+                            <a href="#" class="factory-item">
+                                <img src="img/factory1.jpg" class="factory-img" alt="gallery">
+                                <span class="factory-title factory__title">Пластиковые окна</span>
+                            </a>
+                            <a href="#" class="factory-item">
+                                <img src="img/factory2.jpg" class="factory-img" alt="gallery">
+                                <span class="factory-title factory__title">Двери порталы</span>
+                            </a>
+                            <a href="#" class="factory-item">
+                                <img src="img/factory3.jpg" class="factory-img" alt="gallery">
+                                <span class="factory-title factory__title">Готовые окна для дачи</span>
+                            </a>
+                            <a href="#" class="factory-item">
+                                <img src="img/factory4.jpg" class="factory-img" alt="gallery">
+                                <span class="factory-title factory__title">Оконные профили</span>
+                            </a>
+                            <a href="#" class="factory-item">
+                                <img src="img/factory5.jpg" class="factory-img" alt="gallery">
+                                <span class="factory-title factory__title">Аксессуары для окон</span>
+                            </a>
+                            <a href="#" class="factory-item">
+                                <img src="img/factory6.jpg" class="factory-img" alt="gallery">
+                                <span class="factory-title factory__title">Алюминиевые конструкции</span>
+                            </a>
+                            <a href="#" class="factory-item">
+                                <img src="img/factory7.jpg" class="factory-img" alt="gallery">
+                                <span class="factory-title factory__title">Двери ПВХ</span>
+                            </a>
+                            <a href="#" class="factory-item">
+                                <img src="img/factory8.jpg" class="factory-img" alt="gallery">
+                                <span class="factory-title factory__title">Офисные перегородки</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -215,73 +254,91 @@
 
             <h2 class="site-title quality__title">Качество на совесть</h2>
 
-            <div class="row">
-                <div class="col-3">
-                    <div class="quality-item">
-                        <span class="quality-title">Герметичность</span>
-                        <p class="quality-desc quality__desc">ПВХ окна не надо заклеивать на зиму. Они не пропускают пыль 
-                            с улиц</p>
-                    </div>
+            <div class="d-flex justify-content-between">
+                <div class="quality-item">
+                    <span class="quality-title">Герметичность</span>
+                    <p class="quality-desc quality__desc">ПВХ окна не надо заклеивать на зиму. Они не пропускают пыль 
+                        с улиц</p>
                 </div>
-                <div class="col-3">
-                    <div class="quality-item">
-                        <span class="quality-title">Герметичность</span>
-                        <p class="quality-desc quality__desc">ПВХ окна не надо заклеивать на зиму. Они не пропускают пыль 
-                            с улиц</p>
-                    </div>
+                <div class="quality-item">
+                    <span class="quality-title">Герметичность</span>
+                    <p class="quality-desc quality__desc">ПВХ окна не надо заклеивать на зиму. Они не пропускают пыль 
+                        с улиц</p>
                 </div>
-                <div class="col-3">
-                    <div class="quality-item">
-                        <span class="quality-title">Герметичность</span>
-                        <p class="quality-desc quality__desc">ПВХ окна не надо заклеивать на зиму. Они не пропускают пыль 
-                            с улиц</p>
-                    </div>
+                <div class="quality-item">
+                    <span class="quality-title">Герметичность</span>
+                    <p class="quality-desc quality__desc">ПВХ окна не надо заклеивать на зиму. Они не пропускают пыль 
+                        с улиц</p>
                 </div>
-                <div class="col-3">
-                    <div class="quality-item">
-                        <span class="quality-title">Герметичность</span>
-                        <p class="quality-desc quality__desc">ПВХ окна не надо заклеивать на зиму. Они не пропускают пыль 
-                            с улиц</p>
-                    </div>
+                <div class="quality-item">
+                    <span class="quality-title">Герметичность</span>
+                    <p class="quality-desc quality__desc">ПВХ окна не надо заклеивать на зиму. Они не пропускают пыль 
+                        с улиц</p>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="bg bg--gray">
-        <span class="bg-num">02</span>
-
         <div class="container">
-            <div class="d-flex align-items-center justify-content-between factory__title">
-                <h2 class="site-title">Эталонный сервис</h2>
-                <a href="#" class="factory-link">Все услуги</a>
-            </div>
+            <span class="bg-num services__num">02</span>
 
-            <div class="row">
-                <div class="col-3">
-                    <h3 class="factory-content-title factory-content__title">Полный комплекс услуг </h3>
-
-                    <span class="services-undertitle">Гарантия от 40 лет на профили</span>
-                    <p class="services-desc services__desc">Поставляемые профили IVAPER сохраняют свои свойства не менее 
-                        60 условных лет</p>
-
-                    <span class="services-undertitle">Установка окна за 1 день</span>
-                    <p class="services-desc services__desc">Ценим ваше время: демонтируем старые окна, доставим и смонтируем новые, вывезем мусор за 1 день.</p>
-
-                    <span class="services-undertitle">Изготовление от 5 дней</span>
-                    <p class="services-desc services__desc">Строго соблюдаем сроки и стоимость по условиям договора</p>
+            <div class="relative">
+                <div class="d-flex align-items-center justify-content-between factories__title">
+                    <h2 class="site-title">Эталонный сервис</h2>
+                    <a href="#" class="factory-link">Все услуги</a>
                 </div>
-
-                <div class="col">
-                    <div class="row">
-                        <a href="#" class="factory-item">Пластиковые окна</a>
-                        <a href="#" class="factory-item">Двери порталы</a>
-                        <a href="#" class="factory-item">Готовые окна для дачи</a>
-                        <a href="#" class="factory-item">Оконные профили</a>
-                        <a href="#" class="factory-item">Аксессуары для окон</a>
-                        <a href="#" class="factory-item">Алюминиевые конструкции</a>
-                        <a href="#" class="factory-item">Двери ПВХ</a>
-                        <a href="#" class="factory-item">Офисные перегородки</a>
+    
+                <div class="row">
+                    <div class="col-3">
+                        <h3 class="factory-content-title factory-content__title">Полный комплекс услуг </h3>
+    
+                        <span class="services-undertitle">Гарантия от 40 лет на профили</span>
+                        <p class="services-desc services__desc">Поставляемые профили IVAPER сохраняют свои свойства не менее 
+                            60 условных лет</p>
+    
+                        <span class="services-undertitle">Установка окна за 1 день</span>
+                        <p class="services-desc services__desc">Ценим ваше время: демонтируем старые окна, доставим и смонтируем новые, вывезем мусор за 1 день.</p>
+    
+                        <span class="services-undertitle">Изготовление от 5 дней</span>
+                        <p class="services-desc services__desc">Строго соблюдаем сроки и стоимость по условиям договора</p>
+                    </div>
+    
+                    <div class="col">
+                        <div class="factory-gallery">
+                            <a href="#" class="factory-item">
+                                <img src="img/factory1.jpg" class="factory-img" alt="gallery">
+                                <span class="factory-title factory__title">Пластиковые окна</span>
+                            </a>
+                            <a href="#" class="factory-item">
+                                <img src="img/factory2.jpg" class="factory-img" alt="gallery">
+                                <span class="factory-title factory__title">Двери порталы</span>
+                            </a>
+                            <a href="#" class="factory-item">
+                                <img src="img/factory3.jpg" class="factory-img" alt="gallery">
+                                <span class="factory-title factory__title">Готовые окна для дачи</span>
+                            </a>
+                            <a href="#" class="factory-item">
+                                <img src="img/factory4.jpg" class="factory-img" alt="gallery">
+                                <span class="factory-title factory__title">Оконные профили</span>
+                            </a>
+                            <a href="#" class="factory-item">
+                                <img src="img/factory5.jpg" class="factory-img" alt="gallery">
+                                <span class="factory-title factory__title">Аксессуары для окон</span>
+                            </a>
+                            <a href="#" class="factory-item">
+                                <img src="img/factory6.jpg" class="factory-img" alt="gallery">
+                                <span class="factory-title factory__title">Алюминиевые конструкции</span>
+                            </a>
+                            <a href="#" class="factory-item">
+                                <img src="img/factory7.jpg" class="factory-img" alt="gallery">
+                                <span class="factory-title factory__title">Двери ПВХ</span>
+                            </a>
+                            <a href="#" class="factory-item">
+                                <img src="img/factory8.jpg" class="factory-img" alt="gallery">
+                                <span class="factory-title factory__title">Офисные перегородки</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -356,41 +413,59 @@
         </div>
     </div>
 
-    <div class="bg--gray">
-        <span class="bg-num">03</span>
-
+    <div class="bg bg--gray">
+        
         <div class="container">
-            <div class="row">
-                <h2 class="site-title">Эталонный сервис</h2>
-                <a href="#" class="factory-link">Вся продукция</a>
-            </div>
+            <span class="bg-num results__num">03</span>
 
-            <div class="row">
-                <div class="col-2">
-                    <h3 class="factory-title">Полный комплекс услуг</h3>
-
-                    <span class="factory-undertitle"><span class="text--blue">100 000</span> окон и 47 000 дверей мы произвели в СПб в прошлом году</span>
-                    <p class="factory-desc">Доверяйте изготовление монтаж пластиковых окон только профессионалам надежных компаний, хорошо себя зарекомендовавших на рынке пластиковых окон и дверей годами.</p>
+            
+            <div class="relative">
+                <h2 class="site-title factories__title">Высокие результаты</h2>
+                
+                <div class="row">
                     
-                    <span class="factory-undertitle">Применяем надежные немецкие уплотнители и фурнитуру</span>
-                    <p class="factory-desc">Применение надежных немецких уплотнителей и фурнитуры в комплексе с правильной регулировкой пластиковых окон – гарантия вашего спокойствия на десятилетия.</p>
-                </div>
-                <div class="col">
-                    <h3 class="reviews-title">Отзывы</h3>
+                    <div class="col-3">
+                        <span class="factory-title results__title">Довольные клиенты</span>
 
-                    <div class="reviews-slider">
-                        <div class="review">
-                            <div class="row">
-                                <span class="review-avatar"></span>
-                                <div>
-                                    <span class="review-author">Елена Шипрова</span>
-                                    <span class="review-vacancy"></span>
+                        <div class="result-section result__section">
+                            <span class="result-title">97% наших клиентов довольны</span>
+                            <p class="result-desc result__desc">по результатам мониторинга отдела качества в 2019 году</p>
+                        </div>
+                        <div class="result-section result__section">
+                            <span class="result-title">На 14% выгоднее</span>
+                            <p class="result-desc result__desc">Стоимость пластиковых окон аналогичных предложений на рынке</p>
+                        </div>
+                        <div class="result-section result__section">
+                            <span class="result-title">100 тыс. ПВХ окон и 47 тыс. пластиковых дверей.</span>
+                            <p class="result-desc result__desc">мы выпустили в 2019 году </p>
+                        </div>
+                        <div class="result-section result__section">
+                            <span class="result-title">40 дилеров</span>
+                            <p class="result-desc result__desc">работают с нашим производством</p>
+                        </div>
+                        <div class="result-section result__section">
+                            <span class="result-title">Первый в Петербурге</span>
+                            <p class="result-desc result__desc">мобильный офис начал работать именно у нас</p>
+                        </div>
+                    </div>
+                    <div class="offset-2 col">
+                        <h3 class="reviews-title">Отзывы</h3>
+    
+                        <div class="reviews-slider">
+                            <div class="review">
+                                <div class="review-author">
+                                    <span class="review-name">Елена Шипрова</span>
+                                    <span class="review-vacancy">директор офисного центра Getred</span>
                                 </div>
+    
+                                <p class="review-comment">Заказывали в “Олл Корп” систему безопасности для нашего центра.
+                                    Заказ обработали быстро - уже на следуйщий день инженеры
+                                    окружили меня и требовали разрешения начать работу.
+                                    <br> <br>
+                                    В течение дня установили видеонаблюдения и сигнализацию....</p>
+    
+                                <a href="#" class="review-about">Подробнее</a>
                             </div>
-
-                            <p class="review-comment"></p>
-
-                            <a href="#" class="review-about">Подробнее</a>
                         </div>
                     </div>
                 </div>
@@ -675,5 +750,8 @@
             </div>
         </div>
     </footer>
+    
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

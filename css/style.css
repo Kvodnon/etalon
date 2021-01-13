@@ -1,8 +1,10 @@
 body {
     color: #141e22;
+    font-family: "Gotham Pro";
 }
 .bg {
     padding: 55px 0;
+    overflow: hidden;
 }
 .bg--gray {
     background: #f5f5f5;
@@ -24,6 +26,12 @@ body {
 .text--white {
     color: white;
 }
+.relative {
+    position: relative;
+}
+.container {
+    position: relative;
+}
 .button {
     background-color: rgb(229, 52, 17);
     padding: 5px 13px;
@@ -33,6 +41,15 @@ body {
     border: none;
     outline: none;
     font-size: 14px;
+}
+.bg-num {
+    font-size: 72px;
+    font-weight: 900;
+    color: rgb(235, 235, 235);
+    position: absolute;
+    -moz-transform: matrix( 8.94635520190709,0,0,8.94635520190709,0,0);
+    -webkit-transform: matrix( 8.94635520190709,0,0,8.94635520190709,0,0);
+    -ms-transform: matrix( 8.94635520190709,0,0,8.94635520190709,0,0);
 }
 .text-center {
     text-align: center;
@@ -106,7 +123,7 @@ body {
 }
 .top-phone-link {
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 900;
     color: #141e22;
     text-decoration: none;
 }
@@ -140,7 +157,7 @@ body {
     padding-left: 120px;
 }
 .menu-item {
-    padding: 0 15px 0 30px;
+    padding: 0 5px 0 30px;
 }
 .menu-link {
     display: block;
@@ -166,6 +183,7 @@ body {
     border: 1px solid #e53411;
     background: none;
     color: #e53411;
+    font-size: 12px;
 }
 .header-button__orange {
     margin-bottom: 5px;
@@ -212,13 +230,14 @@ body {
 }
 .main-slider {
     margin-bottom: 70px;
+    box-shadow: 0px 1px 114px 0px rgba(0, 0, 0, 0.15);
 }
 .main-slider-card {
-    box-shadow: 0px 1px 114px 0px rgba(0, 0, 0, 0.15);
     padding: 60px 0 90px 300px;
     background-repeat: no-repeat;
     background-position: bottom left;
     background-color: white;
+    box-shadow: 0px 1px 400px 0px rgba(0, 0, 0, 0.15);
 }
 .main-slider-card:nth-of-type(1) {
     background-image: url("../img/slider1.png");
@@ -296,15 +315,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 66px;
-    height: 66px;
+    width: 67px;
+    height: 67px;
     border-radius: 50%;
     box-shadow: 0px 1px 59px 0px rgba(0, 0, 0, 0.15);
     position: absolute;
     left: 0;
     color: #e53411;
     font-size: 55px;
-    font-weight: bold;
+    font-weight: 800;
 }
 .quality-item:nth-of-type(2)::before {
     content: '2';
@@ -323,6 +342,7 @@ body {
     font-size: 14px;
 }
 .quality__desc {
+    max-width: 175px;
     margin-top: 15px;
 }
 .factory-content-title {
@@ -330,7 +350,7 @@ body {
     font-weight: bold;
     line-height: 0.8;
 }
-.factory__title {
+.factories__title {
     margin-bottom: 50px;
 }
 .factory-content__title {
@@ -514,6 +534,7 @@ body {
     display: block;
     font-size: 12px;
     margin-bottom: 5px;
+    font-weight: 300;
 }
 .employee-desc {
     font-size: 12px;
@@ -536,7 +557,7 @@ body {
     margin-bottom: 35px;
 }
 .footer-form-title {
-    font-weight: bold;
+    font-weight: 900;
     font-size: 48px;
     color: #1b75bb;
     margin-bottom: 20px;
@@ -563,9 +584,9 @@ body {
 }
 .manager-name {
     display: block;
-    font-weight: 500;
+    font-weight: 900;
     font-size: 14px;
-    margin: 10px 0 5px;
+    margin: 10px 0 0;
 }
 .manager-job {
     font-size: 12px;
@@ -591,13 +612,13 @@ body {
     margin-top: 20px;
 }
 .action-card-title {
-    font-weight: bold;
+    font-weight: 900;
     font-size: 30px;
     line-height: 1;
     color: white;
 }
 .action-card__title {
-    max-width: 400px;
+    max-width: 420px;
     margin-bottom: 15px;
 }
 .action-card__button {
@@ -614,7 +635,7 @@ body {
 }
 .footer-link {
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 900;
     color: #1b75bb;
     text-decoration: none;
 }
@@ -629,6 +650,7 @@ body {
 .footer-copy {
     font-size: 14px;
     text-align: center;
+    font-weight: 300;
 }
 .footer-policy {
     font-size: 14px;
@@ -640,4 +662,124 @@ body {
     font-size: 12px;
     color: rgba(20, 30, 34, 0.278);
     line-height: 1.5;
+    font-weight: 400;
+}
+.factory__num {
+    left: 8%;
+    top: 113px;
+}
+.factory-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 11px;
+}
+.factory-item {
+    position: relative;
+}
+.factory-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.factory-title {
+    padding: 5px 8px;
+    color: white;
+    background: #141e22;
+    font-size: 14px;
+    font-weight: 900;
+}
+.factory__title {
+    position: absolute;
+    z-index: 1;
+    left: 15px;
+    display: inline-block;
+    bottom: 15px;
+}
+.services__num {
+    left: 6%;
+    top: 90px;
+}
+.results__num {
+    left: 18%;
+    top: 85px;
+}
+.results__title {
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.result-title {
+    font-size: 14px;
+    font-weight: 900;
+    color: #1b75bb;
+}
+.result-desc {
+    font-size: 14px;
+}
+.results__title {
+    font-size: 24px;
+    font-weight: 900;
+}
+.main-slider-arrow {
+    width: 32px;
+    height: 32px;
+    background-color: rgba(20, 30, 34, 0.271);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.main-slider-arrow::after {
+    content: none;
+}
+.main-slider-prev {
+    background-image: url("../img/main_left.png");
+    left: 0;
+}
+.main-slider-next {
+    background-image: url("../img/main_right.png");
+    right: 0;
+}
+.review {
+    padding: 35px 25px 45px 70px;
+    background: #ffffff;
+    margin-top: 25px;
+}
+.review-name {
+    font-size: 18px;
+    font-weight: 900;
+}
+.review-vacancy {
+    font-size: 14px;
+    display: block;
+    margin: 5px 0 20px;
+    color: #868686;
+}
+.review-comment {
+    font-size: 17px;
+    font-weight: 500;
+    color: #868686;
+    position: relative;
+}
+.review-comment::before {
+    content: '';
+    position: absolute;
+    background: url("../img/quotes.png") no-repeat center;
+    width: 25px;
+    height: 17px;
+    left: -45px;    
+    top: 8px;
+}
+.review-about {
+    border: 1px solid #dddddd;
+    border-radius: 1px;
+    padding: 15px 15px;
+    font-size: 14px;
+    color: #747474;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+}
+.review-author {
+    padding-left: 75px;
+}
+.review-author {
+    background: url("../img/review.jpg") no-repeat left top;
 }
