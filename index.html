@@ -16,11 +16,13 @@
         <div class="top-header">
             <div class="container header__container">
                 <a href="/" class="header-logo header__logo">
-                    <img src="img/logo.png" alt="Логотип">
+                    <img src="img/logo.png" class="header-logo__img" alt="Логотип">
                 </a>
 
                 <ul class="top-menu">
-                    <li class="top-item"><a href="#" class="top-link">О нас</a></li>
+                    <li class="top-item">
+                        <a href="#" class="top-link">О нас</a>
+                    </li>
                     <li class="top-item"><a href="#" class="top-link">Продукция</a></li>
                     <li class="top-item"><a href="#" class="top-link">Услуги</a></li>
                     <li class="top-item"><a href="#" class="top-link">Акции</a></li>
@@ -30,37 +32,77 @@
                     <li class="top-item"><a href="#" class="top-link">Контакты</a></li>
                 </ul>
 
-                <form class="form-search">
-                    <button class="form-search-button form-search__button"></button>
-                </form>
-
-                <div class="top-phone top__phone">
-                    <a href="tel:+78124243275" class="top-phone-link">+7 (812) 424-32-75</a>
-                    <button class="top-phone-action">Заказать звонок</button>
-                </div>
-
-                <div class="schedule">
-                    <span class="schedule-item">Пн-пт 09.00-19.00</span>
-                    <span class="schedule-item">Сб-вс 10.00-18.00</span>
+                <div class="d-flex ms-auto">
+                    <form class="form-search">
+                        <button class="form-search-button form-search__button"></button>
+                    </form>
+    
+                    <div class="top-phone top__phone">
+                        <a href="tel:+78124243275" class="top-phone-link">+7 (812) 424-32-75</a>
+                        <button class="top-phone-action">Заказать звонок</button>
+                    </div>
+    
+                    <div class="schedule">
+                        <span class="schedule-item">Пн-пт 09.00-19.00</span>
+                        <span class="schedule-item">Сб-вс 10.00-18.00</span>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="bottom-header">
-            <div class="container bottom-header-container">
-                <ul class="menu">
-                    <li class="menu-item"><a href="#" class="menu-link">Окна</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Профили</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Двери</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Перегородки</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Алюминиевые конструкции</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Остекление и отделка</a></li>
-                </ul>
+        <div class="container bottom-header-container">
+            <ul class="menu">
+                <li class="menu-item menu-item--children">
+                    <a href="#" class="menu-link">Окна</a>
+                    
+                    <ul class="menu-submenu">
+                        <li class="menu-subitem">
+                            <a href="#" class="menu-sublink">Окна ПВХ</a>
+                        </li>
+                        <li class="menu-subitem">
+                            <a href="#" class="menu-sublink">Окна по серии дома</a>
+                        </li>
+                        <li class="menu-subitem">
+                            <a href="#" class="menu-sublink">Готовые окна для дачи</a>
+                        </li>
+                        <li class="menu-subitem">
+                            <a href="#" class="menu-sublink">Двери ПВХ</a>
+                        </li>
+                        <li class="menu-subitem">
+                            <a href="#" class="menu-sublink">Подъемно-раздвижные двери</a>
+                        </li>
+                        <li class="menu-subitem">
+                            <a href="#" class="menu-sublink">Пластиковые перегородки</a>
+                        </li>
+                        <li class="menu-subitem">
+                            <a href="#" class="menu-sublink">Порталы</a>
+                        </li>
+                        <li class="menu-subitem">
+                            <a href="#" class="menu-sublink">Готовые окна</a>
+                        </li>
+                        <li class="menu-subitem">
+                            <a href="#" class="menu-sublink">Профили для окон ПВХ</a>
+                        </li>
+                        <li class="menu-subitem">
+                            <a href="#" class="menu-sublink">Алюминиевые конструкции</a>
+                        </li>
+                        <li class="menu-subitem">
+                            <a href="#" class="menu-sublink">Аксессуары</a>
+                        </li>
+                        <li class="menu-subitem">
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a href="#" class="menu-link">Профили</a></li>
+                <li class="menu-item"><a href="#" class="menu-link">Двери</a></li>
+                <li class="menu-item"><a href="#" class="menu-link">Перегородки</a></li>
+                <li class="menu-item"><a href="#" class="menu-link">Алюминиевые конструкции</a></li>
+                <li class="menu-item"><a href="#" class="menu-link">Остекление и отделка</a></li>
+            </ul>
 
-                <div class="header-buttons">
-                    <button class="header-button button--orange header-button__orange">Калькулятор стоимости</button>
-                    <button class="header-button">Бесплатный замер</button>
-                </div>
+            <div class="header-buttons">
+                <button class="header-button button--orange header-button__orange">Калькулятор стоимости</button>
+                <button class="header-button">Бесплатный замер</button>
             </div>
         </div>
     </header>
@@ -99,16 +141,17 @@
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="main-slider-card">
-                            <span class="main-slider-title">Скидка на окна 
+                        <div class="main-slider-card" style="background-image: url('img/slider1.png');">
+                            <span class="main-slider-title">Скидка на окна  <br>
                                 в августе <span class="text--orange">5%</span></span>
                             <p class="main-slider-desc main-slider__desc">Оставьте заявку на бесплатный замер, и мы предложим вам несколько вариантов </p>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="main-slider-card">
-                            <span class="main-slider-title">Скидка на окна 
-                                в августе <span class="text--orange">5%</span></span>
+                        <div class="main-slider-card" style="background-image: url('img/slider2.png');">
+                            <span class="main-slider-title">Теплый 5-камерный  <br>
+                                профиль по цене  <br>
+                                3-камерного</span>
                             <p class="main-slider-desc main-slider__desc">Оставьте заявку на бесплатный замер, и мы предложим вам несколько вариантов </p>
                         </div>
                     </div>
