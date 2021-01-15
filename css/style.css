@@ -444,7 +444,7 @@ body {
 }
 .item {
     box-shadow: 0px 1px 114px 0px rgba(0, 0, 0, 0.15);
-    width: 340px;
+    width: 380px;
     padding: 300px 0 30px 30px;
     background: url("../img/item.png") no-repeat center 15px;
 }
@@ -463,8 +463,13 @@ body {
     list-style: none;
     padding: 0;
 }
+.item-title__price {
+    padding-left: 25px;
+}
 .item__button {
     margin-top: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 .office {
     margin-top: 70px;
