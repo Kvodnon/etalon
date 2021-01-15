@@ -347,7 +347,7 @@ body {
 }
 .market-img {
     width: 100%;
-    max-width: 319px;
+    max-width: 336px;
 }
 .quality__title {
     margin-top: 70px;
@@ -384,13 +384,18 @@ body {
 .quality-title {
     font-size: 18px;
     font-weight: bold;
+    max-width: 155px;
+    display: block;
+    min-height: 30px;
+    line-height: 1;
+      
 }
 .quality-desc {
     font-size: 14px;
 }
 .quality__desc {
-    max-width: 175px;
-    margin-top: 15px;
+    max-width: 198px;
+    margin-top: 5px;
 }
 .factory-content-title {
     font-size: 30px;
@@ -407,6 +412,7 @@ body {
     display: block;
     font-size: 16px;
     font-weight: bold;
+    line-height: 1.125;
 }
 .factory-desc {
     font-size: 14px;
@@ -740,7 +746,7 @@ body {
     z-index: 1;
     left: 15px;
     display: inline-block;
-    bottom: 15px;
+    bottom: 10px;
 }
 .services__num {
     left: 6%;
@@ -864,8 +870,8 @@ body {
     background-image: url("../img/angle_orange.png");
 }
 .benefit-col:nth-of-type(2) {
-    padding-left: 60px;
+    width: 30%;
 }
 .benefit-col:nth-of-type(3) {
-    padding-left: 75px;
+    width: 29%;
 }
