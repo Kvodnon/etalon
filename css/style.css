@@ -281,6 +281,7 @@ body {
     margin-top: 60px;
 }
 .benefit {
+    min-height: 93px;
     padding-left: 100px;
     position: relative;
 }
@@ -295,6 +296,35 @@ body {
     height: 81px;
     border-radius: 50%;
     box-shadow: 0px 1px 59px 0px rgba(0, 0, 0, 0.15);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.benefits div:nth-of-type(1) .benefit:nth-of-type(1)::before {
+    background-image: url("../img/benefits1.png");
+}
+.benefits div:nth-of-type(1) .benefit:nth-of-type(2)::before {
+    background-image: url("../img/benefits2.png");
+}
+.benefits div:nth-of-type(1) .benefit:nth-of-type(3)::before {
+    background-image: url("../img/benefits3.png");
+}
+.benefits div:nth-of-type(2) .benefit:nth-of-type(1)::before {
+    background-image: url("../img/benefits4.png");
+}
+.benefits div:nth-of-type(2) .benefit:nth-of-type(2)::before {
+    background-image: url("../img/benefits5.png");
+}
+.benefits div:nth-of-type(2) .benefit:nth-of-type(3)::before {
+    background-image: url("../img/benefits6.png");
+}
+.benefits div:nth-of-type(3) .benefit:nth-of-type(1)::before {
+    background-image: url("../img/benefits7.png");
+}
+.benefits div:nth-of-type(3) .benefit:nth-of-type(2)::before {
+    background-image: url("../img/benefits8.png");
+}
+.benefits div:nth-of-type(3) .benefit:nth-of-type(3)::before {
+    background-image: url("../img/benefits9.png");
 }
 .benefits-title {
     font-size: 24px;
@@ -832,4 +862,10 @@ body {
 }
 .menu-item--children:hover > .menu-link::after {
     background-image: url("../img/angle_orange.png");
+}
+.benefit-col:nth-of-type(2) {
+    padding-left: 60px;
+}
+.benefit-col:nth-of-type(3) {
+    padding-left: 75px;
 }
