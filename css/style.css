@@ -70,6 +70,11 @@ body {
     content: '';
     position: absolute;
 }
+.checkbox:checked::before {
+    background-image: url("../img/check.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .button--blue {
     background: #1b75bb;
 }
@@ -649,6 +654,10 @@ body {
     width: 100%;
     margin-bottom: 15px;
 }
+.form-input::placeholder {
+    color: #d0d0d0;
+    font-size: 14px;
+}
 .form-policy {
     padding-left: 30px;
     font-size: 12px;
@@ -715,10 +724,16 @@ body {
     color: #1b75bb;
     text-decoration: none;
 }
+.footer-link:hover {
+    color: #1b75bb;
+}
 .footer-sublink {
     font-size: 14px;
     text-decoration: none;
     color: #141e22;
+}
+.footer-sublink:hover {
+    color: #1b75bb;
 }
 .fs-item {
     margin-top: 8px;
@@ -739,6 +754,7 @@ body {
     color: rgba(20, 30, 34, 0.278);
     line-height: 1.5;
     font-weight: 400;
+    margin-top: 15px;
 }
 .factory__num {
     left: 8%;
@@ -898,4 +914,12 @@ body {
 }
 .benefit-col:nth-of-type(3) {
     width: 29%;
+}
+.footer-developer {
+    color: #000000;
+    font-family: myriad-pro, sans-serif;
+    font-style: normal;
+}
+.footer-developer a {
+    color: #000000;
 }
