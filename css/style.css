@@ -923,3 +923,30 @@ body {
 .footer-developer a {
     color: #000000;
 }
+.footer-socials {
+    gap: 13px;
+}
+.footer-social {
+    display: block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 11px;
+}
+.footer-social--inst {
+    background-image: url("../img/social1.svg");
+    background-color: #c9c6b3;
+}
+.footer-social--vk {
+    background-size: 15px;
+    background-image: url("../img/social2.svg");
+    background-color: #4393c4;
+}
+.footer-social--youtube {
+    background-size: 12px;
+    background-image: url("../img/social3.svg");
+    background-color: #fe6362;
+    background-position: center 59%;
+}
