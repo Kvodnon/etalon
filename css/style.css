@@ -90,6 +90,7 @@ button:focus {
 
 .header-search {
     position: fixed;
+    height: 45px;
     top: 0;
     width: 100%;
     transform: translateY(-100%);
@@ -107,18 +108,23 @@ button:focus {
     width: 100%;
     background: none;
     border: none;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid rgba(139, 139, 139, 0.38);
     padding: 0 42px 10px 0;
+    font-size: 13px;
+}
+.form-search-input::placeholder {
+    color: rgba(20, 30, 34, .57);
 }
 .form-search-input:focus {
     outline: none;
 }
 .form-search-submit {
     position: absolute;
-    top: 0;
-    right: 10px;
-    width: 32px;
-    height: 32px;
+    top: 10px;
+    padding-right: 0;
+    right: 30px;
+    width: 16px;
+    height: 15px;
     background: url(../img/search-black.png) no-repeat center;
     border: none;
 }
@@ -330,7 +336,7 @@ button:focus {
 }
 .main-slider-card {
     padding: 0 0 0 300px;
-    height: 265px;
+    min-height: 265px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -1039,12 +1045,11 @@ button:focus {
     width: 29%;
 }
 .footer-developer {
-    color: #000000;
-    font-family: myriad-pro, sans-serif;
     font-style: normal;
 }
 .footer-developer a {
     color: #000000;
+    text-decoration-color: rgba(0, 0, 0, 0.3);
 }
 
 .footer-contact {
@@ -1266,4 +1271,57 @@ button:focus {
 }
 .up-btn:focus {
     outline: none;
+}
+
+
+@media (max-width: 575px) {
+    .bg {
+        padding: 20px 0;
+    }
+    .hero-title {
+        font-size: 24px;
+        line-height: 24.65px;
+        max-width: 233px;
+        margin-bottom: 10px;
+    }
+    .hero {
+        padding: 40px 0;
+        background-position: right -310px bottom;
+        background-size: 450px;
+    }
+    .hero-desc {
+        max-width: 231px;
+        font-size: 12px;
+        line-height: 13.52px;
+        margin-bottom: 15px;
+    }
+    .stat-title {
+        font-size: 24px;
+    }
+    .stat-desc {
+        max-width: 80px;
+        font-size: 10px;
+        line-height: 11.27px;
+    }
+    .hero-stat + .hero-stat {
+        margin-left: 35px;
+    }
+    .main-slider-arrow {
+        display: none;
+    }
+    .main-slider-card {
+        padding-left: 34%;
+        min-height: 115px;
+        background-position: left 10% bottom 10%;
+        background-size: 30%;
+    }
+    .main-slider-title {
+        font-size: 14px;
+        line-height: 12.63px;
+        min-width: 225px;
+    }
+    .main-slider-desc {
+        font-size: 10px;
+        line-height: 9.57px;
+    }
 }
