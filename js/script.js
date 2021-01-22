@@ -92,38 +92,31 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     },
     advantagesScroll = () => {
-      document.querySelectorAll('.benefit-title').forEach(title => {
+      // document.querySelectorAll('.benefit-title').forEach(title => {
 
-        title.addEventListener('click', (e) => {
-          const id = title.dataset.scroll.substring(1),
-            scrollTarget = document.getElementById(id),
-            topOffset = document.querySelector('.sticky-menu.sticky').offsetHeight,
-            elementPosition = scrollTarget.getBoundingClientRect().top,
-            offsetPosition = elementPosition - topOffset;
+      //   title.addEventListener('click', (e) => {
+      //     const id = title.dataset.scroll.substring(1),
+      //       scrollTarget = document.getElementById(id),
+      //       topOffset = document.querySelector('.sticky-menu.sticky').offsetHeight,
+      //       elementPosition = scrollTarget.getBoundingClientRect().top,
+      //       offsetPosition = elementPosition - topOffset;
   
-          window.scrollBy({
-              top: offsetPosition,
-              behavior: 'smooth'
-          });
+      //     window.scrollBy({
+      //         top: offsetPosition,
+      //         behavior: 'smooth'
+      //     });
           
-        });
-      });
-
-      // $('.benefit-title').on('click', function() {
-      //   const id = $(this).attr('data-scroll'),
-      //     stickyMenu = $('.sticky-menu.sticky').height();
-
-      //   $('html, body').animate(
-      //     {
-      //       scrollTop: $(id).offset().top - stickyMenu
-      //     },
-      //     {
-      //       duration: 500, // на скорость не влияет, просто вначале замедляет
-      //       easing: 'linear', 
-      //     }
-      //   );
-      //   return false;
+      //   });
       // });
+
+      $('.benefit-title').on('click', function() {
+        const id = $(this).attr('data-scroll'),
+          stickyMenu = $('.sticky-menu.sticky').height();
+
+        $('html, body').stop().animate({scrollTop: $(id).offset().top}, 'slow');
+        
+        return false;
+      });
     },
     initModal = () => {
       $('.popup-with-zoom-anim').magnificPopup({
@@ -207,4 +200,8 @@ document.addEventListener('DOMContentLoaded', () => {
     attachInit();
     addAttach();
     scrollToUp();
+
+    $('.menu__btn').on('click', () => {
+      $('.mobile-menu').show();
+    });
 });

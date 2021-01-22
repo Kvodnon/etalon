@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +12,36 @@
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+    <div class="mobile-menu">
+        <div class="form-block w-form">
+            <form id="email-form" name="email-form" data-name="Email Form"><input type="text"
+                    class="mobile-search w-input" maxlength="256" name="name" data-name="Name" placeholder="поиск"
+                    id="name"><input type="submit" value="" data-wait="Please wait..."
+                    class="mobile-search-button w-button"></form>
+        </div>
+        <nav class="navigation">
+            <ul role="list" class="mobile-list">
+                <li class="mobile-item"><a class="mobile-link" href="#">О нас</a></li>
+                <li class="mobile-item"><a class="mobile-link" href="#">Продукция</a></li>
+                <li class="mobile-item"><a class="mobile-link" href="#">Услуги</a></li>
+                <li class="mobile-item"><a class="mobile-link" href="#">Акции</a></li>
+                <li class="mobile-item"><a class="mobile-link" href="#">Цены</a></li>
+                <li class="mobile-item"><a class="mobile-link" href="#">Портфолио</a></li>
+                <li class="mobile-item"><a class="mobile-link" href="#">Оплата онлайн</a></li>
+                <li class="mobile-item"><a class="mobile-link" href="#">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-separator"></div>
+        <div class="mobile-button mobile-button--orange mobile__button">Калькулятор стоимости</div>
+        <div class="mobile-button">Бесплатный замер</div>
+        <div class="mobile-schedule">
+            <div>Пн-пт 09.00-19.00</div>
+            <div> Сб-вс 10.00-18.00</div>
+        </div>
+    </div>
+    
     <header class="header">
 
         <div class="header-search js-header-search">
@@ -20,15 +50,18 @@
                 <button class="form-search-submit"></button>
             </form>
         </div>
-        
+
         <div class="top-header">
             <div class="container header__container">
-                <a href="/" class="header-logo header__logo">
+                <a href="/" class="header-logo header__logo d-block d-xl-none">
+                    <img src="./img/logo-mini.png" class="header-logo__img-min d-block" alt="Логотип">
+                </a>
+                <a href="/" class="d-none d-xl-block header-logo header__logo">
                     <img src="img/logo.png" class="header-logo__img" alt="Логотип">
                     <img src="./img/logo-mini.png" class="header-logo__img-min" alt="Логотип">
                 </a>
 
-                <ul class="top-menu">
+                <ul class="top-menu d-none d-xl-flex">
                     <li class="top-item">
                         <a href="#" class="top-link">О нас</a>
                     </li>
@@ -42,19 +75,24 @@
                 </ul>
 
                 <div class="d-flex ms-auto">
-                    
+
                     <button class="form-search-button form-search__button js-search-btn"></button>
-                    
-    
+
+
                     <div class="top-phone top__phone">
                         <a href="tel:+78124243275" class="top-phone-link">+7 (812) 424-32-75</a>
-                        <button class="top-phone-action popup-with-zoom-anim" data-mfp-src="#callback">Заказать звонок</button>
+                        <button class="top-phone-action popup-with-zoom-anim" data-mfp-src="#callback">Заказать
+                            звонок</button>
                     </div>
-    
+
                     <div class="schedule">
                         <span class="schedule-item">Пн-пт 09.00-19.00</span>
                         <span class="schedule-item">Сб-вс 10.00-18.00</span>
                     </div>
+
+                    <label class="menu__btn d-xl-none" for="menu__toggle">
+                        <span></span>
+                    </label>
                 </div>
             </div>
         </div>
@@ -66,7 +104,7 @@
                 <ul class="menu">
                     <li class="menu-item menu-item--children">
                         <a href="#" class="menu-link">Окна</a>
-                        
+
                         <ul class="menu-submenu">
                             <li class="menu-subitem">
                                 <a href="#" class="menu-sublink">Окна ПВХ</a>
@@ -111,23 +149,25 @@
                     <li class="menu-item"><a href="#" class="menu-link">Алюминиевые конструкции</a></li>
                     <li class="menu-item"><a href="#" class="menu-link">Остекление и отделка</a></li>
                 </ul>
-    
+
                 <div class="header-buttons">
-                    <button class="header-button button--orange header-button__orange popup-with-zoom-anim" data-mfp-src="#calculate-full">Калькулятор стоимости</button>
-                    <button class="header-button popup-with-zoom-anim" data-mfp-src="#measurement">Бесплатный замер</button>
+                    <button class="header-button button--orange header-button__orange popup-with-zoom-anim"
+                        data-mfp-src="#calculate-full">Калькулятор стоимости</button>
+                    <button class="header-button popup-with-zoom-anim" data-mfp-src="#measurement">Бесплатный
+                        замер</button>
                 </div>
             </div>
         </div>
-        
+
     </header>
 
     <div class="bg hero">
         <div class="container">
-             <h1 class="hero-title hero__title">Меняем взгляд на мир 
+            <h1 class="hero-title hero__title">Меняем взгляд на мир
                 к лучшему</h1>
-            <p class="hero-desc hero__desc">Производим и устанавливаем пластиковые и алюминиевые 
+            <p class="hero-desc hero__desc">Производим и устанавливаем пластиковые и алюминиевые
                 окна, двери и перегородки</p>
-            
+
             <div class="d-flex">
                 <div class="hero-stat">
                     <span class="stat-uptitle">более</span>
@@ -156,22 +196,24 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="main-slider-card" style="background-image: url('img/slider1.png');">
-                            <span class="main-slider-title">Скидка на окна  <br>
+                            <span class="main-slider-title">Скидка на окна <br>
                                 в августе <span class="text--orange">5%</span></span>
-                            <p class="main-slider-desc main-slider__desc">Оставьте заявку на бесплатный замер, и мы предложим вам несколько вариантов </p>
+                            <p class="main-slider-desc main-slider__desc">Оставьте заявку на бесплатный замер, и мы
+                                предложим вам несколько вариантов </p>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="main-slider-card" style="background-image: url('img/slider2.png');">
-                            <span class="main-slider-title">Теплый 5-камерный  <br>
-                                профиль по цене  <br>
+                            <span class="main-slider-title">Теплый 5-камерный <br>
+                                профиль по цене <br>
                                 3-камерного</span>
-                            <p class="main-slider-desc main-slider__desc"><span class="text--orange">Акция</span> действует при отправке заявки он-лайн. Подробности уточняйте у менеджеров по телефону: 
+                            <p class="main-slider-desc main-slider__desc"><span class="text--orange">Акция</span>
+                                действует при отправке заявки он-лайн. Подробности уточняйте у менеджеров по телефону:
                                 <a class="main-slider-phone" href="tel:+78124243275">+7 (812) 424-32-75</a></p>
                         </div>
                     </div>
                 </div>
-                
+
                 <span class="main-slider-arrow main-slider-prev swiper-button-prev"></span>
                 <span class="main-slider-arrow main-slider-next swiper-button-next"></span>
             </div>
@@ -184,17 +226,20 @@
 
                     <div class="benefit">
                         <h4 class="benefit-title" data-scroll="#assortment">Широкий ассортимент</h4>
-                        <p class="benefit-desc benefit__desc">Производим всё — от окон, дверей, перегородок до подоконников, отвесов и москитных сеток</p>
+                        <p class="benefit-desc benefit__desc">Производим всё — от окон, дверей, перегородок до
+                            подоконников, отвесов и москитных сеток</p>
                     </div>
-                    
+
                     <div class="benefit">
                         <h4 class="benefit-title" data-scroll="#years">15 лет на рынке</h4>
-                        <p class="benefit-desc benefit__desc">Производим окна ПВХ с 2005 года. Используем немецкие оконные профили, стеклопакеты и фурнитуру</p>
+                        <p class="benefit-desc benefit__desc">Производим окна ПВХ с 2005 года. Используем немецкие
+                            оконные профили, стеклопакеты и фурнитуру</p>
                     </div>
 
                     <div class="benefit">
                         <h4 class="benefit-title" data-scroll="#quality">Качество на совесть</h4>
-                        <p class="benefit-desc benefit__desc">Наши окна герметичные, долговечные, обладают хорошей звукоизоляцией, не промерзают и не потеют</p>
+                        <p class="benefit-desc benefit__desc">Наши окна герметичные, долговечные, обладают хорошей
+                            звукоизоляцией, не промерзают и не потеют</p>
                     </div>
                 </div>
                 <div class="col-4 benefit-col">
@@ -202,17 +247,20 @@
 
                     <div class="benefit">
                         <h4 class="benefit-title" data-scroll="#services">Полный комплекс услуг</h4>
-                        <p class="benefit-desc benefit__desc">Мы можем всё — от установки готового окна до остекления коттеджа или зимнего сада</p>
+                        <p class="benefit-desc benefit__desc">Мы можем всё — от установки готового окна до остекления
+                            коттеджа или зимнего сада</p>
                     </div>
 
                     <div class="benefit">
                         <h4 class="benefit-title" data-scroll="#price">Приятные цены</h4>
-                        <p class="benefit-desc benefit__desc">Мы предлагаем цены на 14% ниже аналогичных предложений на рынке</p>
+                        <p class="benefit-desc benefit__desc">Мы предлагаем цены на 14% ниже аналогичных предложений на
+                            рынке</p>
                     </div>
 
                     <div class="benefit">
                         <h4 class="benefit-title" data-scroll="#office">Мобильный офис</h4>
-                        <p class="benefit-desc benefit__desc">Наш менеджер приедет с образцами окон прямо к вам домой, там же рассчитает стоимость и заключит договор</p>
+                        <p class="benefit-desc benefit__desc">Наш менеджер приедет с образцами окон прямо к вам домой,
+                            там же рассчитает стоимость и заключит договор</p>
                     </div>
                 </div>
                 <div class="col-4 benefit-col">
@@ -225,12 +273,14 @@
 
                     <div class="benefit">
                         <h4 class="benefit-title" data-scroll="#portfolio">Большое портфолио</h4>
-                        <p class="benefit-desc benefit__desc">Более 200 объектов — от отделки лоджий до остекления крупных коттеджей</p>
+                        <p class="benefit-desc benefit__desc">Более 200 объектов — от отделки лоджий до остекления
+                            крупных коттеджей</p>
                     </div>
 
                     <div class="benefit">
                         <h4 class="benefit-title" data-scroll="#team">Профессиональная команда</h4>
-                        <p class="benefit-desc benefit__desc">Только опытные сотрудники без вовлечения неквалифицированного труда сезонных мигрантовк</p>
+                        <p class="benefit-desc benefit__desc">Только опытные сотрудники без вовлечения
+                            неквалифицированного труда сезонных мигрантовк</p>
                     </div>
                 </div>
             </div>
@@ -238,7 +288,7 @@
     </div>
 
     <div class="bg bg--gray" id="assortment">
-        
+
         <div class="container">
             <span class="bg-num factory__num">01</span>
 
@@ -247,16 +297,21 @@
                     <h2 class="site-title">Собственное производство в Санкт-Петербурге</h2>
                     <a href="#" class="factory-link">Вся продукция</a>
                 </div>
-    
+
                 <div class="row">
                     <div class="col-3">
                         <h3 class="factory-content-title factory-content__title">Широкий ассортимент</h3>
-    
-                        <span class="factory-undertitle"><span class="text--blue">100 000</span> окон и 47 000 дверей мы произвели в СПб в прошлом году</span>
-                        <p class="factory-desc factory__desc">Доверяйте изготовление монтаж пластиковых окон только профессионалам надежных компаний, хорошо себя зарекомендовавших на рынке пластиковых окон и дверей годами.</p>
-                        
+
+                        <span class="factory-undertitle"><span class="text--blue">100 000</span> окон и 47 000 дверей мы
+                            произвели в СПб в прошлом году</span>
+                        <p class="factory-desc factory__desc">Доверяйте изготовление монтаж пластиковых окон только
+                            профессионалам надежных компаний, хорошо себя зарекомендовавших на рынке пластиковых окон и
+                            дверей годами.</p>
+
                         <span class="factory-undertitle">Применяем надежные немецкие уплотнители и фурнитуру</span>
-                        <p class="factory-desc factory__desc">Применение надежных немецких уплотнителей и фурнитуры в комплексе с правильной регулировкой пластиковых окон – гарантия вашего спокойствия на десятилетия.</p>
+                        <p class="factory-desc factory__desc">Применение надежных немецких уплотнителей и фурнитуры в
+                            комплексе с правильной регулировкой пластиковых окон – гарантия вашего спокойствия на
+                            десятилетия.</p>
                     </div>
                     <div class="col">
                         <div class="factory-gallery">
@@ -302,7 +357,7 @@
     <div class="bg" id="years">
         <div class="container">
             <h2 class="site-title market__title">15 лет на рынке</h2>
-            
+
             <div class="d-flex justify-content-between">
                 <img src="img/market1.png" class="market-img" alt="15 years on market">
                 <img src="img/market2.png" class="market-img" alt="15 years on market">
@@ -315,21 +370,23 @@
             <div class="d-flex justify-content-between">
                 <div class="quality-item">
                     <span class="quality-title">Герметичность</span>
-                    <p class="quality-desc quality__desc">ПВХ окна не надо заклеивать на зиму. Они не пропускают пыль 
+                    <p class="quality-desc quality__desc">ПВХ окна не надо заклеивать на зиму. Они не пропускают пыль
                         с улиц</p>
                 </div>
                 <div class="quality-item">
                     <span class="quality-title">Долговечность</span>
-                    <p class="quality-desc quality__desc">Срок службы окон ПВХ 60 лет. Не деформируются от перепадов температуры</p>
+                    <p class="quality-desc quality__desc">Срок службы окон ПВХ 60 лет. Не деформируются от перепадов
+                        температуры</p>
                 </div>
                 <div class="quality-item">
-                    <span class="quality-title">Не промерзают 
+                    <span class="quality-title">Не промерзают
                         и не потеют</span>
-                    <p class="quality-desc quality__desc">Энергосберегающие окна обеспечивают надежную защиту от холода зимой 
+                    <p class="quality-desc quality__desc">Энергосберегающие окна обеспечивают надежную защиту от холода
+                        зимой
                         и жары летом</p>
                 </div>
                 <div class="quality-item">
-                    <span class="quality-title">Хорошая 
+                    <span class="quality-title">Хорошая
                         звукоизоляция</span>
                     <p class="quality-desc quality__desc">Надежная защита от шума на загруженных улицах</p>
                 </div>
@@ -346,22 +403,25 @@
                     <h2 class="site-title">Эталонный сервис</h2>
                     <a href="#" class="factory-link">Все услуги</a>
                 </div>
-    
+
                 <div class="row">
                     <div class="col-3">
                         <h3 class="factory-content-title factory-content__title">Полный комплекс услуг </h3>
-    
+
                         <span class="services-undertitle">Гарантия от 40 лет на профили</span>
-                        <p class="services-desc services__desc">Поставляемые профили IVAPER сохраняют свои свойства не менее 
+                        <p class="services-desc services__desc">Поставляемые профили IVAPER сохраняют свои свойства не
+                            менее
                             60 условных лет</p>
-    
+
                         <span class="services-undertitle">Установка окна за 1 день</span>
-                        <p class="services-desc services__desc">Ценим ваше время: демонтируем старые окна, доставим и смонтируем новые, вывезем мусор за 1 день.</p>
-    
+                        <p class="services-desc services__desc">Ценим ваше время: демонтируем старые окна, доставим и
+                            смонтируем новые, вывезем мусор за 1 день.</p>
+
                         <span class="services-undertitle">Изготовление от 5 дней</span>
-                        <p class="services-desc services__desc">Строго соблюдаем сроки и стоимость по условиям договора</p>
+                        <p class="services-desc services__desc">Строго соблюдаем сроки и стоимость по условиям договора
+                        </p>
                     </div>
-    
+
                     <div class="col">
                         <div class="factory-gallery">
                             <a href="#" class="factory-item">
@@ -406,7 +466,7 @@
     <div class="bg" id="price">
         <div class="container">
             <h2 class="site-title items__title">Приятные цены</h2>
-            
+
             <div class="d-flex justify-content-between">
                 <div class="item">
                     <img src="" alt="">
@@ -414,10 +474,10 @@
                     <span class="item-title item__title">Стандарт<span class="item-title__price">от 5700 ₽</span></span>
 
                     <ul class="item-list">
-                        <li class="item-list-line item-list__line">Размер  1400 x 1200 мм</li>
-                        <li class="item-list-line item-list__line">Профиль  IVAPER GRAU, белый</li>
-                        <li class="item-list-line item-list__line">Стеклопакет однокамерный  24 мм 4-16-4</li>
-                        <li class="item-list-line item-list__line">Фурнитура  AXOR</li>
+                        <li class="item-list-line item-list__line">Размер 1400 x 1200 мм</li>
+                        <li class="item-list-line item-list__line">Профиль IVAPER GRAU, белый</li>
+                        <li class="item-list-line item-list__line">Стеклопакет однокамерный 24 мм 4-16-4</li>
+                        <li class="item-list-line item-list__line">Фурнитура AXOR</li>
                         <li class="item-list-line item-list__line">Поворотно-откидная створка</li>
                     </ul>
 
@@ -429,10 +489,10 @@
                     <span class="item-title item__title">Комфорт<span class="item-title__price">от 7500 ₽</span></span>
 
                     <ul class="item-list">
-                        <li class="item-list-line item-list__line">Размер  1400 x 1200 мм</li>
-                        <li class="item-list-line item-list__line">Профиль  IVAPER GRAU, белый</li>
-                        <li class="item-list-line item-list__line">Стеклопакет однокамерный  24 мм 4-16-4</li>
-                        <li class="item-list-line item-list__line">Фурнитура  AXOR</li>
+                        <li class="item-list-line item-list__line">Размер 1400 x 1200 мм</li>
+                        <li class="item-list-line item-list__line">Профиль IVAPER GRAU, белый</li>
+                        <li class="item-list-line item-list__line">Стеклопакет однокамерный 24 мм 4-16-4</li>
+                        <li class="item-list-line item-list__line">Фурнитура AXOR</li>
                         <li class="item-list-line item-list__line">Поворотно-откидная створка</li>
                     </ul>
 
@@ -444,10 +504,10 @@
                     <span class="item-title item__title">Премиум<span class="item-title__price">от 8700 ₽</span></span>
 
                     <ul class="item-list">
-                        <li class="item-list-line item-list__line">Размер  1400 x 1200 мм</li>
-                        <li class="item-list-line item-list__line">Профиль  IVAPER GRAU, белый</li>
-                        <li class="item-list-line item-list__line">Стеклопакет однокамерный  24 мм 4-16-4</li>
-                        <li class="item-list-line item-list__line">Фурнитура  AXOR</li>
+                        <li class="item-list-line item-list__line">Размер 1400 x 1200 мм</li>
+                        <li class="item-list-line item-list__line">Профиль IVAPER GRAU, белый</li>
+                        <li class="item-list-line item-list__line">Стеклопакет однокамерный 24 мм 4-16-4</li>
+                        <li class="item-list-line item-list__line">Фурнитура AXOR</li>
                         <li class="item-list-line item-list__line">Поворотно-откидная створка</li>
                     </ul>
 
@@ -459,7 +519,8 @@
                 <div class="row">
                     <div class="col-4">
                         <h2 class="office-title">Мобильный офис</h2>
-                        <p class="office-desc">Мы первые в Петербурге стали использовать мобильные офисы. Менеджер офиса произведёт замер, точно рассчитает цену и заключит договор в удобном для вас месте.</p>
+                        <p class="office-desc">Мы первые в Петербурге стали использовать мобильные офисы. Менеджер офиса
+                            произведёт замер, точно рассчитает цену и заключит договор в удобном для вас месте.</p>
                         <button class="button office__button">Вызвать мобильный офис</button>
                     </div>
                     <div class="col d-flex justify-content-end">
@@ -472,26 +533,28 @@
     </div>
 
     <div class="bg bg--gray" id="clients">
-        
+
         <div class="container">
             <span class="bg-num results__num">03</span>
 
-            
+
             <div class="relative">
                 <h2 class="site-title factories__title">Высокие результаты</h2>
-                
+
                 <div class="row">
-                    
+
                     <div class="col-3">
                         <span class="factory-title results__title">Довольные клиенты</span>
 
                         <div class="result-section result__section">
                             <span class="result-title">97% наших клиентов довольны</span>
-                            <p class="result-desc result__desc">по результатам мониторинга отдела качества в 2019 году</p>
+                            <p class="result-desc result__desc">по результатам мониторинга отдела качества в 2019 году
+                            </p>
                         </div>
                         <div class="result-section result__section">
                             <span class="result-title">На 14% выгоднее</span>
-                            <p class="result-desc result__desc">Стоимость пластиковых окон аналогичных предложений на рынке</p>
+                            <p class="result-desc result__desc">Стоимость пластиковых окон аналогичных предложений на
+                                рынке</p>
                         </div>
                         <div class="result-section result__section">
                             <span class="result-title">100 тыс. ПВХ окон и 47 тыс. пластиковых дверей.</span>
@@ -508,39 +571,25 @@
                     </div>
                     <div class="offset-2 col-7">
                         <h3 class="reviews-title">Отзывы</h3>
-    
+
                         <div class="reviews-wrapper">
 
                             <div class="reviews-slider swiper-container">
                                 <div class="swiper-wrapper">
-                                    
+
                                     <div class="review swiper-slide">
                                         <div class="review-author">
                                             <span class="review-name">Елена Шипрова</span>
                                             <span class="review-vacancy">директор офисного центра Getred</span>
                                         </div>
-            
-                                        <p class="review-comment">Заказывали в “Олл Корп” систему безопасности для нашего центра.
+
+                                        <p class="review-comment">Заказывали в “Олл Корп” систему безопасности для
+                                            нашего центра.
                                             Заказ обработали быстро - уже на следуйщий день инженеры
                                             окружили меня и требовали разрешения начать работу.
                                             <br> <br>
                                             В течение дня установили видеонаблюдения и сигнализацию....</p>
-            
-                                        <a href="#" class="review-about">Подробнее</a>
-                                    </div>
-        
-                                    <div class="review swiper-slide">
-                                        <div class="review-author">
-                                            <span class="review-name">Елена Шипрова</span>
-                                            <span class="review-vacancy">директор офисного центра Getred</span>
-                                        </div>
-            
-                                        <p class="review-comment">Заказывали в “Олл Корп” систему безопасности для нашего центра.
-                                            Заказ обработали быстро - уже на следуйщий день инженеры
-                                            окружили меня и требовали разрешения начать работу.
-                                            <br> <br>
-                                            В течение дня установили видеонаблюдения и сигнализацию....</p>
-            
+
                                         <a href="#" class="review-about">Подробнее</a>
                                     </div>
 
@@ -549,13 +598,14 @@
                                             <span class="review-name">Елена Шипрова</span>
                                             <span class="review-vacancy">директор офисного центра Getred</span>
                                         </div>
-            
-                                        <p class="review-comment">Заказывали в “Олл Корп” систему безопасности для нашего центра.
+
+                                        <p class="review-comment">Заказывали в “Олл Корп” систему безопасности для
+                                            нашего центра.
                                             Заказ обработали быстро - уже на следуйщий день инженеры
                                             окружили меня и требовали разрешения начать работу.
                                             <br> <br>
                                             В течение дня установили видеонаблюдения и сигнализацию....</p>
-            
+
                                         <a href="#" class="review-about">Подробнее</a>
                                     </div>
 
@@ -564,13 +614,14 @@
                                             <span class="review-name">Елена Шипрова</span>
                                             <span class="review-vacancy">директор офисного центра Getred</span>
                                         </div>
-            
-                                        <p class="review-comment">Заказывали в “Олл Корп” систему безопасности для нашего центра.
+
+                                        <p class="review-comment">Заказывали в “Олл Корп” систему безопасности для
+                                            нашего центра.
                                             Заказ обработали быстро - уже на следуйщий день инженеры
                                             окружили меня и требовали разрешения начать работу.
                                             <br> <br>
                                             В течение дня установили видеонаблюдения и сигнализацию....</p>
-            
+
                                         <a href="#" class="review-about">Подробнее</a>
                                     </div>
 
@@ -579,24 +630,41 @@
                                             <span class="review-name">Елена Шипрова</span>
                                             <span class="review-vacancy">директор офисного центра Getred</span>
                                         </div>
-            
-                                        <p class="review-comment">Заказывали в “Олл Корп” систему безопасности для нашего центра.
+
+                                        <p class="review-comment">Заказывали в “Олл Корп” систему безопасности для
+                                            нашего центра.
                                             Заказ обработали быстро - уже на следуйщий день инженеры
                                             окружили меня и требовали разрешения начать работу.
                                             <br> <br>
                                             В течение дня установили видеонаблюдения и сигнализацию....</p>
-            
+
+                                        <a href="#" class="review-about">Подробнее</a>
+                                    </div>
+
+                                    <div class="review swiper-slide">
+                                        <div class="review-author">
+                                            <span class="review-name">Елена Шипрова</span>
+                                            <span class="review-vacancy">директор офисного центра Getred</span>
+                                        </div>
+
+                                        <p class="review-comment">Заказывали в “Олл Корп” систему безопасности для
+                                            нашего центра.
+                                            Заказ обработали быстро - уже на следуйщий день инженеры
+                                            окружили меня и требовали разрешения начать работу.
+                                            <br> <br>
+                                            В течение дня установили видеонаблюдения и сигнализацию....</p>
+
                                         <a href="#" class="review-about">Подробнее</a>
                                     </div>
                                 </div>
 
-                                
+
                             </div>
-                            
+
                             <div class="reviews-dots swiper-pagination"></div>
 
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -609,16 +677,16 @@
                 <h2 class="site-title">Большое портфолио</h2>
                 <a href="#" class="button button--blue link">Смотреть все примеры работ</a>
             </div>
-            
+
             <div class="d-flex justify-content-between">
                 <img src="img/market1.png" class="market-img" alt="15 years on market">
                 <img src="img/market2.png" class="market-img" alt="15 years on market">
                 <img src="img/market3.png" class="market-img" alt="15 years on market">
                 <img src="img/market4.png" class="market-img" alt="15 years on market">
             </div>
-    
+
             <h2 class="site-title team__title" id="team">Профессиональная команда</h2>
-            
+
 
             <span class="site-undertitle team__undertitle">Обращение директора компании</span>
 
@@ -627,15 +695,21 @@
                     <p>
                         <span class="text--blue" style="font-weight: 500;">Спасибо, что выбираете нас!</span>
                         <br><br>
-                        С 2005 года мы производим и устанавливаем пластиковые окна по требованиям ГОСТ в Санкт-Петербурге по минимальным ценам.
-                        Я гарантирую Вам, что продукция ООО "Эталон Окна" - лучшее предложение в Санкт-Петербурге по соотношению цена/качество. Благодаря использованию современных методов организации производства и системы менеджмента качества мы уверенно развиваемся даже в сложной экономической обстановке.
-                        Сейчас мы являемся одним из крупнейших производителей пластиковых окон, дверей и офисных перегородок из ПВХ.
+                        С 2005 года мы производим и устанавливаем пластиковые окна по требованиям ГОСТ в
+                        Санкт-Петербурге по минимальным ценам.
+                        Я гарантирую Вам, что продукция ООО "Эталон Окна" - лучшее предложение в Санкт-Петербурге по
+                        соотношению цена/качество. Благодаря использованию современных методов организации производства
+                        и системы менеджмента качества мы уверенно развиваемся даже в сложной экономической обстановке.
+                        Сейчас мы являемся одним из крупнейших производителей пластиковых окон, дверей и офисных
+                        перегородок из ПВХ.
                         <br><br>
-                        Я лично отвечаю за качество работы моей компании, поэтому с любыми вопросами Вы можете обратиться прямо ко мне.
+                        Я лично отвечаю за качество работы моей компании, поэтому с любыми вопросами Вы можете
+                        обратиться прямо ко мне.
                         <br><br>
-                        Присылайте свои вопросы, отзывы и пожелания на мою личную почту director@etalonokon.ru. Я ценю и уважаю каждый отзыв, отвечаю на каждое письмо!С уважением,
+                        Присылайте свои вопросы, отзывы и пожелания на мою личную почту director@etalonokon.ru. Я ценю и
+                        уважаю каждый отзыв, отвечаю на каждое письмо!С уважением,
                     </p>
-        
+
                     <div class="boss-card boss__card">
                         <span class="boss-name">Колпаков Вячеслав Геннадьевич</span>
                         <span class="boss-job">Генеральный директор</span>
@@ -702,21 +776,21 @@
     <div class="bg how-to">
         <div class="container">
             <h2 class="site-title how-to__title text--white">Как заказать пластиковые окна</h2>
-    
+
             <div class="d-flex justify-content-between how-to-container">
                 <div class="how-card">
                     <span class="how-title how__title popup-with-zoom-anim" href="#measurement">Вызвать замерщика</span>
                     <span class="how-desc">Расчет стоимости пластиковых окон</span>
                 </div>
-    
+
                 <span class="how-separator how__separator"></span>
 
                 <div class="how-card">
                     <span class="how-title how__title popup-with-zoom-anim" href="#callback">Заключить договор</span>
-                    <span class="how-desc">Согласование стоимости и даты 
+                    <span class="how-desc">Согласование стоимости и даты
                         монтажа пластиковых окон</span>
                 </div>
-                
+
                 <span class="how-separator how__separator"></span>
 
                 <div class="how-card">
@@ -732,7 +806,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-6">
-                    <h2 class="footer-form-title">Сделайте заказ в августе 
+                    <h2 class="footer-form-title">Сделайте заказ в августе
                         со скидкой 35%</h2>
 
                     <div class="row">
@@ -740,12 +814,13 @@
                             <form action="">
                                 <input type="text" class="form-input" name="fullname" placeholder="ФИО">
                                 <input type="text" class="form-input" name="phone" placeholder="+7 (___)-__-__">
-    
+
                                 <label for="form-policy" class="d-flex align-items-baseline label__policy">
                                     <input type="checkbox" id="form-policy" class="checkbox subscribe__checkbox">
-                                    <span class="form-policy">Cогласен с Положением об обработке персональных данных</span>
+                                    <span class="form-policy">Cогласен с Положением об обработке персональных
+                                        данных</span>
                                 </label>
-    
+
                                 <button class="button">Отправить заявку</button>
                             </form>
                         </div>
@@ -763,7 +838,8 @@
                     <div class="action-card">
                         <span class="action-card-title action-card__title">Закажите бесплатный
                             выезд замерщика</span>
-                        <button class="button action-card__button popup-with-zoom-anim" href="#measurement">Отправить заявку</button>
+                        <button class="button action-card__button popup-with-zoom-anim" href="#measurement">Отправить
+                            заявку</button>
                     </div>
 
                     <div class="action-card">
@@ -789,7 +865,8 @@
                                 <li class="fs-item"><a href="#" class="footer-sublink">Окна по серии дома</a></li>
                                 <li class="fs-item"><a href="#" class="footer-sublink">Готовые окна для дачи</a></li>
                                 <li class="fs-item"><a href="#" class="footer-sublink">Двери ПВХ</a></li>
-                                <li class="fs-item"><a href="#" class="footer-sublink">Подъемно-раздвижные двери</a></li>
+                                <li class="fs-item"><a href="#" class="footer-sublink">Подъемно-раздвижные двери</a>
+                                </li>
                                 <li class="fs-item"><a href="#" class="footer-sublink">Пластиковые перегородки</a></li>
                                 <li class="fs-item"><a href="#" class="footer-sublink">Порталы</a></li>
                                 <li class="fs-item"><a href="#" class="footer-sublink">Готовые окна</a></li>
@@ -807,9 +884,12 @@
 
                             <ul class="footer-sublist">
                                 <li class="fs-item"><a href="#" class="footer-sublink">Установка окон (монтаж)</a></li>
-                                <li class="fs-item"><a href="#" class="footer-sublink">Отделка лоджий и балконов</a></li>
-                                <li class="fs-item"><a href="#" class="footer-sublink">Утепление балконов и лоджий</a></li>
-                                <li class="fs-item"><a href="#" class="footer-sublink">Остекление балконов и лоджий</a></li>
+                                <li class="fs-item"><a href="#" class="footer-sublink">Отделка лоджий и балконов</a>
+                                </li>
+                                <li class="fs-item"><a href="#" class="footer-sublink">Утепление балконов и лоджий</a>
+                                </li>
+                                <li class="fs-item"><a href="#" class="footer-sublink">Остекление балконов и лоджий</a>
+                                </li>
                                 <li class="fs-item"><a href="#" class="footer-sublink">Упаковка окон</a></li>
                                 <li class="fs-item"><a href="#" class="footer-sublink">Доставка окон ПВХ</a></li>
                                 <li class="fs-item"><a href="#" class="footer-sublink">Ремонт окон ПВХ</a></li>
@@ -861,7 +941,8 @@
 
                     <div class="footer-contact">
                         <div class="footer-phone">
-                            <div class="footer-phone-number">Телефон: <a href="tel:+78124243275">+7 (812) 424-32-75</a></div>
+                            <div class="footer-phone-number">Телефон: <a href="tel:+78124243275">+7 (812) 424-32-75</a>
+                            </div>
                             <small>Пн-Пт с 9:00 до 19:00 Сб, Вс с 10:00 до 18:00</small>
                         </div>
 
@@ -889,8 +970,10 @@
                 <a href="#" class="footer-policy">Политика конфиденциальности</a>
                 <p style="margin: 5px 0">© Продажа готовых окон «ЭТАЛОН ОКНА», 2010-2020</p>
                 <span class="footer-developer"><a href="https://evorate.ru/">Evorate</a> - разработка сайта</span>
-                <p class="footer-offer">Данные, представленные на сайте, не являются публичной офертой. Копирование материалов сайта строго запрещено и преследуется по закону. <br>
-                    В случае незаконного копирования материалов, мы оставляем за собой право обратиться в суд для взыскания материальной компенсации за нарушение авторских прав</p>
+                <p class="footer-offer">Данные, представленные на сайте, не являются публичной офертой. Копирование
+                    материалов сайта строго запрещено и преследуется по закону. <br>
+                    В случае незаконного копирования материалов, мы оставляем за собой право обратиться в суд для
+                    взыскания материальной компенсации за нарушение авторских прав</p>
             </div>
         </div>
     </footer>
@@ -907,7 +990,7 @@
     <a class="popup-with-zoom-anim" href="#success">Заявка принята</a><br>
      -->
 
-    
+
     <div id="callback" class="mfp-modal zoom-anim-dialog mfp-hide">
         <h3 class="mfp-modal-title">Заказать звонок</h3>
         <p class="mfp-modal-subtitle">Перезвоним вам в течение 2-3 часов</p>
@@ -948,7 +1031,8 @@
 
     <div id="calculate" class="mfp-modal zoom-anim-dialog mfp-hide">
         <h3 class="mfp-modal-title">Рассчитать стоимость</h3>
-        <p class="mfp-modal-subtitle">Наш менеджер свяжется с вами, чтобы уточнить детали и предложить несколько вариантов</p>
+        <p class="mfp-modal-subtitle">Наш менеджер свяжется с вами, чтобы уточнить детали и предложить несколько
+            вариантов</p>
 
         <form class="mfp-form">
 
@@ -1013,9 +1097,10 @@
 
     <div id="calculate-full" class="mfp-modal zoom-anim-dialog mfp-hide">
         <h3 class="mfp-modal-title">Рассчитать стоимость</h3>
-        <p class="mfp-modal-subtitle">Наш менеджер свяжется с вами, чтобы уточнить детали и предложить несколько вариантов</p>
+        <p class="mfp-modal-subtitle">Наш менеджер свяжется с вами, чтобы уточнить детали и предложить несколько
+            вариантов</p>
 
-        
+
 
         <form class="mfp-form">
 
@@ -1028,13 +1113,13 @@
                 <div class="js-attach-file attach-file">
                     <label class="js-label-file label-file">
                         <input type="file">
-                        <span class="js-file-name file-name">Прикрепить фото</span> 
+                        <span class="js-file-name file-name">Прикрепить фото</span>
                     </label>
                 </div>
             </div>
 
             <button type="button" class="add-attach js-add-attach">Добавить ещё один замер</button>
-            
+
             <div class="mfp-step">Шаг 2. Укажите ваш контакт</div>
 
             <div class="mfp-group"><input type="text" class="mfp-input" placeholder="ФИО"></div>
@@ -1056,6 +1141,7 @@
     <script src="https://code.jquery.com/jquery-git.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/script.js?6"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
