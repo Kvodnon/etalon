@@ -1038,12 +1038,6 @@ button:focus {
 .menu-item--children:hover > .menu-link::after {
     background-image: url("../img/angle_orange.png");
 }
-.benefit-col:nth-of-type(2) {
-    width: 30%;
-}
-.benefit-col:nth-of-type(3) {
-    width: 29%;
-}
 .footer-developer {
     font-style: normal;
 }
@@ -1498,6 +1492,24 @@ button:focus {
     }
 }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+    .main-slider-card {
+        padding-left: 130px;
+        background-position: bottom left -145px;
+    }
+    .benefits__title {
+        min-height: 60px;
+    }
+}
+
+@media (min-width: 992px) {
+    .benefit-col:nth-of-type(2) {
+        width: 30%;
+    }
+    .benefit-col:nth-of-type(3) {
+        width: 29%;
+    }
+}
 @media (max-width: 991px) {
     .menu {
         height: 45px;
@@ -1520,8 +1532,25 @@ button:focus {
         padding-left: 0;
         color: rgb(229, 52, 17);
     }
+    .main-slider-arrow {
+        display: none;
+    }
+    .benefits__title {
+        margin: 30px 0 45px;
+    }
+    .benefit + .benefit {
+        margin-top: 30px;
+    }
+    .benefits {
+        margin-top: 15px;
+    }
 }
 
+@media (max-width: 767px) {
+    .site-title {
+        font-size: 27px;
+    }
+}
 @media (max-width: 575px) {
     .bg {
         padding: 20px 0;
@@ -1546,6 +1575,9 @@ button:focus {
     .stat-title {
         font-size: 24px;
     }
+    .site-title {
+        font-size: 16px;
+    }
     .stat-desc {
         max-width: 80px;
         font-size: 10px;
@@ -1554,13 +1586,10 @@ button:focus {
     .hero-stat + .hero-stat {
         margin-left: 35px;
     }
-    .main-slider-arrow {
-        display: none;
-    }
     .main-slider-card {
         padding-left: 34%;
         min-height: 115px;
-        background-position: left 10% bottom 10%;
+        background-position: left bottom 95%;
         background-size: 30%;
     }
     .main-slider-title {
@@ -1571,5 +1600,32 @@ button:focus {
     .main-slider-desc {
         font-size: 10px;
         line-height: 9.57px;
+    }
+    .benefits__title {
+        font-size: 11px;
+        margin: 20px 0 15px;
+    }
+    .benefit::before {
+        width: 48px;
+        height: 48px;
+    }
+    .benefit-title {
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    .benefit-desc {
+        font-size: 10px;
+        line-height: 9.57px;
+        margin-bottom: 0;
+    }
+    .benefit {
+        padding-left: 63px;
+        min-height: auto;
+    }
+    .benefit + .benefit {
+        margin-top: 15px;
+    }
+    .benefit::before {
+        background-size: 25px;
     }
 }
